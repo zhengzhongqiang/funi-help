@@ -10,8 +10,21 @@
     <properties>
         <java.version>1.7</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>3.1.1.RELEASE</spring.version>
+        <spring.version>4.1.2.RELEASE</spring.version>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
     <build>
         <finalName>fh</finalName>
         <resources>
@@ -22,7 +35,7 @@
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
-                <targetPath>${project.build.directory}/classes</targetPath>
+                <targetPath>${project.build.directory}/WEB-INF</targetPath>
                 <filtering>false</filtering>
             </resource>
         </resources>
@@ -78,6 +91,16 @@
                 <version>2.2</version>
                 <configuration>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+                    <webResources>
+                        <resource>
+                            <directory>src/main/resources</directory>
+                            <filtering>false
+                            </filtering>
+                            <targetPath>
+                                WEB-INF
+                            </targetPath>
+                        </resource>
+                    </webResources>
                 </configuration>
             </plugin>
         </plugins>
