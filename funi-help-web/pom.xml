@@ -24,6 +24,11 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jstl-impl</artifactId>
+            <version>1.2</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>fh</finalName>
