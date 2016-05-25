@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>机构备案-后台管理</title>
     <link type="text/css" rel="stylesheet" href="css/uikit.min.css"/>
-    <script type="text/javascript" src="js/uikit.min.js"></script>
     <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/uikit.js"></script>
 </head>
 <body>
 <a href=""><i class="uk-icon-cog"></i>你好吗？</a>
@@ -19,18 +19,36 @@
     <div class="uk-dropdown">23534</div>
 
 </div>
-<!--
- 这是关联了点击模式的JavaScript的容器
-<div data-uk-dropdown="{mode:'click'}">
+<div class="uk-button-group">
+    <div aria-expanded="false" aria-haspopup="true" data-uk-dropdown="{mode:'click'}">
+        <button class="uk-button uk-button-primary"><i class="uk-icon-caret-down"></i></button>
+        <div class="uk-dropdown uk-dropdown-small">
+            <ul class="uk-nav uk-nav-dropdown">
+                <li><a href="#"><i class="uk-icon-edit"></i> Edit</a></li>
+                <li><a href="#"><i class="uk-icon-eye"></i> View</a></li>
+                <li><a href="#"><i class="uk-icon-check-square-o"></i> Enable</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><i class="uk-icon-trash-o"></i> Trash</a></li>
+            </ul>
+        </div>
+    </div>
+    <button class="uk-button uk-button-primary"><i class="uk-icon-folder-open"></i> Post</button>
 
-    &lt;!&ndash; 拨动下拉菜单的元素 &ndash;&gt;
-    <div>...</div>
-
-    &lt;!&ndash; 这是下拉菜单 &ndash;&gt;
-    <div class="uk-dropdown">...</div>
-
-</div>-->
-
+</div>
+<div class="uk-button-dropdown" aria-expanded="false" aria-haspopup="true" data-uk-dropdown="{mode:'click'}">
+    <button class="uk-button">点击我呀 <i class="uk-icon-caret-down"></i></button>
+    <div class="uk-dropdown">
+        <ul class="uk-nav uk-nav-dropdown">
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Another item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Another item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Separated item</a></li>
+        </ul>
+    </div>
+</div>
 </div>
 
 </body>

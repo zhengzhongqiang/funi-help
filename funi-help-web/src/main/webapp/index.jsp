@@ -10,6 +10,6 @@
     <title></title>
   </head>
   <body>
-<h1>你好Arisz正在开发当中，敬请期待！</h1>
+    <h1>你好Arisz正在开发当中，敬请期待！</h1>
   </body>
 </html>
